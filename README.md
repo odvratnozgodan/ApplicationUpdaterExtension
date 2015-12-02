@@ -33,8 +33,11 @@ ApplicationUpdaterExtension.iOSAppID = "123456"
 	* `ApplicationUpdaterExtension.checkForUpdateWeekly();` - checks for update weekly(iOS only)
 	
 
+## Reporting issues
 You are welcomed to use the extension and report issues, but I don't guarantee when will I have time to resolve any of them.
+
+## Features requests
 I will not be adding any features in the near future because for my use-case this extension is good enough.
  
-##Pull requests welcome
+## Pull requests welcome
 I welcome anyone who wishes to fork the project and implement new features. In that case just create a pull request.  
