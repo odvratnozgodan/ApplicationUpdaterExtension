@@ -1,0 +1,76 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/ant.xml
+* .idea/artifacts/
+* .idea/artifacts/ApplicationUpdater_jar.xml
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/inspectionProfiles/
+* .idea/inspectionProfiles/Project_Default.xml
+* .idea/inspectionProfiles/profiles_settings.xml
+* .idea/libraries/
+* .idea/libraries/libs.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* ApplicationUpdater.iml
+* build_android_library.properties
+* build_android_library.xml
+* out/
+* out/production/
+* out/production/Extension/
+* out/production/Extension/META-INF/
+* out/production/Extension/META-INF/MANIFEST.MF
+* out/production/Extension/eu/
+* out/production/Extension/eu/amodo/
+* out/production/Extension/eu/amodo/extensions/
+* out/production/Extension/eu/amodo/extensions/applicationupdater/
+* out/production/Extension/eu/amodo/extensions/applicationupdater/BuildConfig.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/ExtensionActivity.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/ExtensionContext.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/Manifest.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/R.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/functions/
+* out/production/Extension/eu/amodo/extensions/applicationupdater/functions/DisposeFunction.class
+* out/production/Extension/eu/amodo/extensions/applicationupdater/functions/InitFunction.class
+* platformoptions-android.xml
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* libs/FlashRuntimeExtensions.jar => app/libs/FlashRuntimeExtensions.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/META-INF/MANIFEST.MF => app/src/main/resources/META-INF/MANIFEST.MF
+* src/eu/amodo/.DS_Store => app/src/main/resources/eu/amodo/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

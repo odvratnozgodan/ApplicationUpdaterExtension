@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="amazonStore">Amazon App Store</string>
+    <string name="app_name">Update checker</string>
+    <string name="button_force_update_test">Force Update Check</string>
+    <string name="dialogNegativeButton">No, thanks</string>
+    <string name="dialogNeutralButton">Later</string>
+    <string name="dialogPositiveButton">OK</string>
+    <string name="downloadFor">Check out the new update for %1$s!\nAvailable now on %2$s.</string>
+    <string name="googlePlay">Google Play</string>
+    <string name="library_name">Update Checker</string>
+    <string name="newUpdateAvailable">New update found</string>
+</resources>

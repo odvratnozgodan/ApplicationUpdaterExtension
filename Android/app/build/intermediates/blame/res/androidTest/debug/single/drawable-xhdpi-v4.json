@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_applicationupdater.png",
+        "source": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_applicationupdater.png"
+    },
+    {
+        "merged": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_stat_play_store.png",
+        "source": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_stat_play_store.png"
+    },
+    {
+        "merged": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_stat_amazon.png",
+        "source": "/Users/revolucija/Development/ApplicationUpdaterExtension/Android/app/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_stat_amazon.png"
+    }
+]
