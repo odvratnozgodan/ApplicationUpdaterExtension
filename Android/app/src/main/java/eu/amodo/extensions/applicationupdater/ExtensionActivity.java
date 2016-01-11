@@ -41,11 +41,11 @@ public class ExtensionActivity extends Activity implements FREExtension {
 		Log.i(TAG, "dispose()");
 	}
 
-	public void checkForUpdate(){
+	public void checkForUpdate(int requiredChecks){
 		Log.i(TAG, "checkForUpdate()");
         try{
             UpdateChecker checker = new UpdateChecker(extensionContext.getActivity());
-            UpdateChecker.setSuccessfulChecksRequired(5);
+            UpdateChecker.setSuccessfulChecksRequired(requiredChecks);
             UpdateChecker.start();
         }catch (Exception otherException){
             otherException.printStackTrace();

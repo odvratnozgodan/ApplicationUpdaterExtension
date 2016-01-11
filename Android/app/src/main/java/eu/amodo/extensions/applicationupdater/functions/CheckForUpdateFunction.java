@@ -12,7 +12,14 @@ public class CheckForUpdateFunction implements FREFunction {
 	
 	public FREObject call(FREContext context, FREObject[] args) {
 		Log.i(TAG, "CheckForUpdateFunction()");
-		ExtensionActivity.getInstance().checkForUpdate();
+        int requiredChecks = 5;
+        try {
+            requiredChecks = args[0].getAsInt();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+		ExtensionActivity.getInstance().checkForUpdate(requiredChecks);
 		return null;
 	}
 

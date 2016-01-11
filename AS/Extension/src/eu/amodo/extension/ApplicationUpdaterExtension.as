@@ -67,16 +67,16 @@ package eu.amodo.extension {
 			ApplicationUpdaterExtension.instance.disposeExtension();
 		}
 
-		public static function checkForUpdate():void{
-			ApplicationUpdaterExtension.instance.checkForUpdateExtension();
+		public static function checkForUpdate(requiredChecks:int = 5):void{
+			ApplicationUpdaterExtension.instance.checkForUpdateExtension(requiredChecks);
 		}
 
 		public static function checkForUpdateDaily():void{
-			ApplicationUpdaterExtension.instance.checkForUpdateExtension();
+			ApplicationUpdaterExtension.instance.checkForUpdateDailyExtension();
 		}
 
 		public static function checkForUpdateWeekly():void{
-			ApplicationUpdaterExtension.instance.checkForUpdateExtension();
+			ApplicationUpdaterExtension.instance.checkForUpdateWeeklyExtension();
 		}
 
 		public static function get iOSAppID():String{
@@ -97,9 +97,9 @@ package eu.amodo.extension {
 			extContext.call( "init");
 		}
 
-		private function checkForUpdateExtension():void{
+		private function checkForUpdateExtension(requiredChecks:int = 5):void{
 			if(Capabilities.manufacturer.indexOf("Android") != -1){
-				extContext.call( "checkForUpdate");
+				extContext.call( "checkForUpdate", requiredChecks);
 			}else{
 				if(_iOSAppID != ""){
 					extContext.call( "checkForUpdate", _iOSAppID);

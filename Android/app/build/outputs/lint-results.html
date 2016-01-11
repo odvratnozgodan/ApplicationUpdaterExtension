@@ -18,7 +18,7 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Wed Dec 02 12:28:42 CET 2015.<br/>
+Check performed at Mon Jan 11 09:35:51 CET 2016.<br/>
 11 errors and 14 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
@@ -134,8 +134,8 @@ To fix this issue, set the <code>targetSdkVersion</code> to the highest availabl
 <span class="lineno">  12</span> 	
 <span class="lineno">  13</span> 	public FREObject call(FREContext context, FREObject[] args) {
 <span class="lineno">  14</span> 		<span class="errorspan">Log.i(TAG, "CheckForUpdateFunction()");</span>
-<span class="lineno">  15</span> 		ExtensionActivity.getInstance().checkForUpdate();
-<span class="lineno">  16</span> 		return null;
+<span class="lineno">  15</span>         int requiredChecks = 5;
+<span class="lineno">  16</span>         try {
 </pre>
 <span class="location"><a href="../../src/main/java/eu/amodo/extensions/applicationupdater/functions/DisposeFunction.java">../../src/main/java/eu/amodo/extensions/applicationupdater/functions/DisposeFunction.java</a>:16</span>: <span class="message">The logging tag can be at most 23 characters, was 64 (eu.amodo.extensions.applicationupdater.functions.DisposeFunction)</span><br /><pre class="errorlines">
 <span class="lineno">  13</span> 	public static final String TAG = "eu.amodo.extensions.applicationupdater.functions.DisposeFunction";
@@ -174,7 +174,7 @@ To fix this issue, set the <code>targetSdkVersion</code> to the highest availabl
 <span class="location"><a href="../../src/main/java/eu/amodo/extensions/applicationupdater/ExtensionActivity.java">../../src/main/java/eu/amodo/extensions/applicationupdater/ExtensionActivity.java</a>:45</span>: <span class="message">The logging tag can be at most 23 characters, was 56 (eu.amodo.extensions.applicationupdater.ExtensionActivity)</span><br /><pre class="errorlines">
 <span class="lineno">  42</span> 	}
 <span class="lineno">  43</span> 
-<span class="lineno">  44</span> 	public void checkForUpdate(){
+<span class="lineno">  44</span> 	public void checkForUpdate(int requiredChecks){
 <span class="lineno">  45</span> 		<span class="errorspan">Log.i(TAG, "checkForUpdate()");</span>
 <span class="lineno">  46</span>         try{
 <span class="lineno">  47</span>             UpdateChecker checker = new UpdateChecker(extensionContext.getActivity());

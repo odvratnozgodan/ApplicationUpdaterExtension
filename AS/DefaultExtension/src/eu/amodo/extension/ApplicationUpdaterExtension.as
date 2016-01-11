@@ -59,7 +59,7 @@ package eu.amodo.extension {
 			//
 		}
 
-		public static function checkForUpdate():void{
+		public static function checkForUpdate(requiredChecks:Number = 5):void{
 
 		}
 
@@ -89,7 +89,7 @@ package eu.amodo.extension {
 			//
 		}
 
-		private function checkForUpdateExtension():void{
+		private function checkForUpdateExtension(requiredChecks:Number = 5):void{
 			//
 		}
 
